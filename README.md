@@ -1,0 +1,2 @@
+# distribution
+distribution 是对于im的管理组件，应对公司快速发展的业务，单机的IM系统已经不能满足正常业务需求，需要引入一个管理组件对IM进行集群化处理，这个im管理组件就是这个distribution项目
