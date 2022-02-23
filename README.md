@@ -24,7 +24,7 @@ im管理组件就是这个distribution项目
 - 蓝色服务框：IM在线服务，维护用户的IM在线，具体可参看另外一个im仓库
 - 红色服务框：distribution 管理服务，对im节点的所有通知操作和查询都是通过本服务来进行的
 
-![img](online.png)
+![img](docs/online.png)
 
 需求解读，用户阶段： 
 - 1.用户创建连接是通过distribution 进行询问IM服务地址
@@ -39,3 +39,13 @@ distribution 节点：
 - 3.在线管理服务需要支持发送对点消息 ：sendMessage(content []byte,tokens...string )
 - 4.在线管理服务需要支持获取IM节点： sendMessage(content []byte,tokens...string )
 
+### 时序图
+
+##### 用户时序图
+![img](docs/time_user.png)
+
+- 用户上线需要先从distribution 中获取im集群的链接地址
+- 用户对集群中某一台机器发起连接请求
+
+
+##### IM时序图
